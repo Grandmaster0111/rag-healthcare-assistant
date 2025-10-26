@@ -14,7 +14,7 @@ google_api_key = get_google_api_key()
 cx = get_google_cx()
 gemini_api_key = get_gemini_api_key()
 num_results = st.slider("Number of top web results:", 3, 10, 5)
-# gemini_model = st.text_input("Gemini model (default: gemini-2.5-pro):", value="gemini-2.5-pro")
+gemini_model = "gemini-2.5-pro"
 
 user_input = st.text_area("Describe your question or medical problem:")
 if st.button("Ask Medical Assistant"):
